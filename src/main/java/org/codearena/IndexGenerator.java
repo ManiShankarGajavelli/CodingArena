@@ -18,7 +18,7 @@ public class IndexGenerator {
         String basePackage = "org.codearena";
         List<Class<?>> classes = getClasses(basePackage);
 
-        try (FileWriter writer = new FileWriter("index.md")) {
+        try (FileWriter writer = new FileWriter("README.md")) {
             writer.write("# Coding Arena Problem Index\n\n");
             writer.write("| Title | Class | Difficulty | Tags |Problem Id\n");
             writer.write("|-------|-------|------|------------|---------|\n");
