@@ -11,7 +11,7 @@ import java.util.*;
 
 public class IndexGenerator {
 
-    static String baseRepoUrl = "https://github.com/yourusername/yourrepo/blob/main/";
+    static String baseRepoUrl = "https://github.com/ManiShankarGajavelli/CodingArena/blob/main/";
     static String sourceRootPath = "src/main/java/";
 
     public static void main(String[] args) throws Exception {
