@@ -3,7 +3,7 @@ package org.codearena.annnotations;
 import java.lang.annotation.*;
 
 @Retention(RetentionPolicy.RUNTIME)
-@Target(ElementType.TYPE)
+@Target({ElementType.METHOD, ElementType.TYPE})
 public @interface ProblemMetadata {
     String[] tags();
     String difficulty();

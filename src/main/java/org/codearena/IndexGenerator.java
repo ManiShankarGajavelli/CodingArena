@@ -44,7 +44,7 @@ public class IndexGenerator {
                 }
             }
 
-            System.out.println("✅ index.md generated!");
+            System.out.println("✅ Readme.md generated!");
         }
     }
 
