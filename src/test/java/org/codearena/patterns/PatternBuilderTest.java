@@ -6,7 +6,6 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.codearena.PerformanceRule;
 
-@ProblemMetadata( tags = {"Loops","Patterns"},difficulty = "Medium",title = "Different Patterns")
 public class PatternBuilderTest {
 
     @Rule
@@ -130,4 +129,16 @@ public class PatternBuilderTest {
                 ;
         Assert.assertEquals(expectedOutput, currentOutput);
     }
+
+    @Test
+    public void testGenerateInvertedPyramidOfStars1() {
+        String currentOutput = pb.generateInvertedPyramidOfStars(3);
+        String expectedOutput =
+                       "*****\n" +
+                        " *** \n" +
+                        "  *  \n";
+        Assert.assertEquals(expectedOutput, currentOutput);
+    }
+
+
 }

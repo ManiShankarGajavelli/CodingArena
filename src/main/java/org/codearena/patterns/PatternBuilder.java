@@ -121,6 +121,35 @@ public class PatternBuilder {
         return output.toString();
     }
 
+    @ProblemMetadata(tags = {"Patterns","Loops"},title = "Generate Inverted pyramid Of Stars",difficulty = "Medium")
+    public String generateInvertedPyramidOfStars(int rows) {
+
+        StringBuilder output = new StringBuilder("");
+
+        // This is the outer loop which will loop for the rows.
+        for (int i = 0; i <rows; i++) {
+
+            // For printing the spaces before stars in each row
+            for (int j =0; j<i; j++)
+            {
+                output.append(" ");
+            }
+
+            // For printing the stars in each row
+            for(int j=0;j< 2*rows-(2*i +1);j++){
+
+                output.append("*");
+            }
+            // For printing the spaces after the stars in each row
+            for (int j =0; j<i; j++)
+            {
+                output.append(" ");
+            }
+
+            output.append("\n");
+        }
+        return output.toString();
+    }
 
 
 }
